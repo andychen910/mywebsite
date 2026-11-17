@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08131f">
+  <meta name="description" content="Andy Chen's master's project on interest-rate changes, U.S. housing-price growth, and differences across seven states.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Master Project | Andy Chen">
+  <meta property="og:description" content="A research story about interest rates, housing prices, and state-level differences.">
+  <meta property="og:url" content="https://andychen910.com/projects/master-project/">
+  <link rel="canonical" href="https://andychen910.com/projects/master-project/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/projects/master-project/project.css">
+  <title>Master Project | Andy Chen</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="research-header">
+    <a class="brand" href="/" aria-label="Andy Chen, home"><span class="brand-mark">AC<span>.</span></span><span>Andy Chen</span></a>
+    <div class="header-meta"><span>MASTER'S PROJECT</span><span class="header-status"><i></i> RESEARCH IN PROGRESS</span></div>
+    <a class="back-link" href="/">Back to portfolio <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <aside class="progress-rail" aria-label="Research sections">
+    <a href="#question" class="is-active"><span>01</span><b>Question</b></a>
+    <a href="#data"><span>02</span><b>Data</b></a>
+    <a href="#method"><span>03</span><b>Method</b></a>
+    <a href="#evidence"><span>04</span><b>Evidence</b></a>
+    <a href="#limits"><span>05</span><b>Limits</b></a>
+    <a href="#next"><span>06</span><b>Next</b></a>
+  </aside>
+
+  <main id="main">
+    <section class="research-hero" id="question">
+      <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+      <div class="hero-copy reveal">
+        <p class="status-line"><span></span> MASTER'S PROJECT / 2026</p>
+        <h1>How do interest rates move through the housing market?</h1>
+        <p class="hero-lede">I am studying how changes in interest rates are associated with U.S. housing-price growth, how long the response takes, and why the pattern may differ across states.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#data">Enter the research <span>↓</span></a><a class="button button-quiet" href="https://github.com/andychen910/Master-Project" target="_blank" rel="noopener noreferrer">Open repository <span>↗</span></a></div>
+      </div>
+      <div class="hero-visual reveal" aria-label="A conceptual diagram showing rate changes flowing into housing responses" role="img">
+        <div class="visual-grid"></div><div class="visual-ring ring-one"></div><div class="visual-ring ring-two"></div>
+        <div class="visual-core"><span>RATE</span><strong>→</strong><span>RESPONSE</span></div>
+        <span class="visual-node node-top">INTEREST RATE</span><span class="visual-node node-right">HOUSING PRICE</span><span class="visual-node node-bottom">STATE DIFFERENCE</span>
+        <div class="visual-footer"><span>OBSERVE / MODEL / EXPLAIN</span><span>AC / 2026</span></div>
+      </div>
+      <div class="hero-foot reveal"><span>MONTHLY NATIONAL ANALYSIS</span><span>QUARTERLY STATE PANEL</span><span>SEVEN STATES</span></div>
+    </section>
+
+    <section class="section intro-section">
+      <div class="section-label">THE STARTING POINT</div>
+      <div class="intro-layout"><h2>A national market is still made of local decisions.</h2><div><p>When borrowing becomes more expensive, housing demand may weaken. But prices do not necessarily adjust immediately, and the same national rate change may look different in California, Texas, or Ohio.</p><p class="muted">This project connects the timing question with the state comparison.</p></div></div>
+      <div class="stat-row"><div><strong>2</strong><span>analytical tracks</span></div><div><strong>7</strong><span>selected states</span></div><div><strong>1959–2025</strong><span>available macro data</span></div></div>
+    </section>
+
+    <section class="section questions-section" id="questions">
+      <div class="section-label">THE QUESTIONS</div><h2>Four questions guide the analysis.</h2>
+      <div class="question-list">
+        <button class="question-item is-open" type="button" aria-expanded="true"><span>01</span><strong>Are interest-rate changes associated with later housing-price growth?</strong><em>+</em><p>Establish the baseline relationship before adding more detailed timing and state comparisons.</p></button>
+        <button class="question-item" type="button" aria-expanded="false"><span>02</span><strong>How long does the response take?</strong><em>+</em><p>Compare current and lagged rate changes using distributed-lag windows.</p></button>
+        <button class="question-item" type="button" aria-expanded="false"><span>03</span><strong>Do the responses differ across states?</strong><em>+</em><p>Use state interactions to study whether the same national change is associated with different state outcomes.</p></button>
+        <button class="question-item" type="button" aria-expanded="false"><span>04</span><strong>Are the patterns robust?</strong><em>+</em><p>Check alternative measures, lag lengths, sample periods, and the COVID-19 period.</p></button>
+      </div>
+    </section>
+
+    <section class="section data-section" id="data">
+      <div class="section-label">THE DATA</div><div class="section-heading-row"><h2>Two views of one housing question.</h2><p>Each track answers a different part of the research design.</p></div>
+      <div class="tracks">
+        <article class="track track-national"><span class="track-number">01</span><p class="track-kicker">MONTHLY / NATIONAL</p><h3>When does the response appear?</h3><div class="track-line"></div><ul><li>U.S. national house price index</li><li>Federal funds rate and Treasury yield</li><li>Inflation, unemployment, payrolls</li><li>Distributed-lag analysis</li></ul></article>
+        <article class="track track-state"><span class="track-number">02</span><p class="track-kicker">QUARTERLY / STATE PANEL</p><h3>Why might states differ?</h3><div class="track-line"></div><ul><li>FHFA state house price index</li><li>Arizona, California, Florida, Illinois</li><li>New York, Ohio, and Texas</li><li>Fixed effects and state interactions</li></ul></article>
+      </div>
+      <div class="source-strip"><span>FRED-MD</span><span>FRED-QD</span><span>FHFA HPI</span><span>1987 COMPARABLE SAMPLE</span></div>
+    </section>
+
+    <section class="section evidence-section" id="evidence">
+      <div class="section-label">DESCRIPTIVE EVIDENCE</div><div class="section-heading-row"><div><h2>Before modeling, look at the shape of the data.</h2><p class="chart-note">These visuals describe the available data. They are not final model results.</p></div><span class="chart-source">Source: FHFA state HPI files<br>Q4 observations, normalized to 1987 = 100</span></div>
+      <div class="chart-panel"><div class="chart-toolbar"><div class="state-controls" role="group" aria-label="Highlight a state"><button class="state-filter is-active" data-state="all" type="button">All</button><button class="state-filter" data-state="CA" type="button">CA</button><button class="state-filter" data-state="TX" type="button">TX</button><button class="state-filter" data-state="AZ" type="button">AZ</button><button class="state-filter" data-state="FL" type="button">FL</button><button class="state-filter" data-state="IL" type="button">IL</button><button class="state-filter" data-state="NY" type="button">NY</button><button class="state-filter" data-state="OH" type="button">OH</button></div><span class="chart-unit">INDEX / 1987 = 100</span></div><div class="chart-wrap"><svg id="state-chart" viewBox="0 0 900 390" role="img" aria-labelledby="state-chart-title state-chart-desc"><title id="state-chart-title">Normalized house price index by state</title><desc id="state-chart-desc">A descriptive line chart comparing seven selected states from 1987 to 2025.</desc><g class="chart-grid"></g><g class="chart-lines"></g><g class="chart-labels"></g></svg></div><div class="chart-legend" id="chart-legend"></div></div>
+      <div class="data-callout"><span class="callout-mark">↗</span><div><strong>The chart is a starting point, not a conclusion.</strong><p>Different trajectories motivate the panel model, but they do not by themselves explain why states moved differently.</p></div></div>
+    </section>
+
+    <section class="section method-section" id="method">
+      <div class="section-label">THE METHOD</div><div class="section-heading-row"><h2>From raw observations to interpretable models.</h2><p>The project prioritizes transparent transformations and results that can be explained.</p></div>
+      <div class="method-flow"><div class="method-step is-current"><span>01</span><strong>Prepare</strong><p>Inventory sources, align dates, check gaps, and create clean monthly and quarterly files.</p></div><div class="method-arrow">→</div><div class="method-step"><span>02</span><strong>Transform</strong><p>Convert house price indices to growth measures and define rate changes and lag windows.</p></div><div class="method-arrow">→</div><div class="method-step"><span>03</span><strong>Estimate</strong><p>Compare baseline, distributed-lag, and state interaction models.</p></div><div class="method-arrow">→</div><div class="method-step"><span>04</span><strong>Stress-test</strong><p>Review alternative specifications, sample periods, and the COVID-19 period.</p></div></div>
+      <div class="model-notes"><div><span>MODEL 01</span><h3>National baseline</h3><p>Sets a clear reference point for the average association.</p></div><div><span>MODEL 02</span><h3>Distributed lag</h3><p>Studies whether the response builds over several months.</p></div><div><span>MODEL 03</span><h3>State heterogeneity</h3><p>Tests whether state responses differ from the common pattern.</p></div></div>
+    </section>
+
+    <section class="section limits-section" id="limits">
+      <div class="section-label">THE BOUNDARIES</div><h2>Good analysis also explains what it cannot claim.</h2>
+      <div class="limit-grid"><article><span>01</span><h3>Association is not causation.</h3><p>Without a stronger external identification strategy, the results will describe dynamic relationships rather than prove that every rate change caused a price change.</p></article><article><span>02</span><h3>National rates are common across states.</h3><p>The panel model studies differences through interaction terms, not fully independent state-level interest-rate shocks.</p></article><article><span>03</span><h3>Quarterly data has limits.</h3><p>The state analysis compares quarterly timing and magnitude, but cannot provide exact monthly response dates for every state.</p></article></div>
+    </section>
+
+    <section class="section next-section" id="next">
+      <div class="section-label">THE NEXT STEP</div><div class="next-layout"><div><h2>The research is moving from design to evidence.</h2><p>The proposal and data structure are in place. The next stage is to estimate the models, evaluate robustness, and write the findings with the same level of transparency.</p></div><div class="status-timeline"><div class="done"><span>✓</span><p>Proposal completed</p></div><div class="done"><span>✓</span><p>Data sources assembled</p></div><div class="current"><span>03</span><p>Model estimation in progress</p></div><div><span>04</span><p>Robustness and final interpretation</p></div></div></div>
+      <div class="next-actions"><a class="button button-primary" href="https://github.com/andychen910/Master-Project" target="_blank" rel="noopener noreferrer">View the repository <span>↗</span></a><a class="button button-quiet" href="/Andy-Chen-Resume.pdf" target="_blank" rel="noopener">Download resume <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer class="research-footer"><a href="/">Andy Chen<span>.</span></a><span>Chico, California / 2026</span><a href="#question">Back to top ↑</a></footer>
+  <script src="/projects/master-project/project.js" defer></script>
+</body>
+</html>

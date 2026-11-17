@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><radialGradient id="glow"><stop stop-color="#27545b"/><stop offset="1" stop-color="#0b1320"/></radialGradient><linearGradient id="orb" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#a8f1de"/><stop offset=".55" stop-color="#4bbbad"/><stop offset="1" stop-color="#0c3544"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="#0b1320"/><rect x="640" width="560" height="630" fill="url(#glow)"/>
+  <path d="M0 125H1200M0 250H1200M0 375H1200M0 500H1200M150 0V630M300 0V630M450 0V630M600 0V630M750 0V630M900 0V630M1050 0V630" stroke="#9dd8d1" stroke-opacity=".08"/>
+  <text x="76" y="114" fill="#8fe5d4" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5">ANDY CHEN / PORTFOLIO</text>
+  <text x="76" y="270" fill="#f4f6f4" font-family="Arial,sans-serif" font-size="92" font-weight="700">Andy Chen.</text>
+  <text x="76" y="358" fill="#8fe5d4" font-family="Arial,sans-serif" font-size="49" font-weight="700">Data Science &amp; Analytics</text>
+  <text x="80" y="510" fill="#b6cbd1" font-family="Arial,sans-serif" font-size="25">STATISTICAL MODELING  ·  ECONOMIC RESEARCH  ·  BUSINESS ANALYSIS</text>
+  <ellipse cx="949" cy="295" rx="192" ry="80" transform="rotate(-25 949 295)" fill="none" stroke="#aeead8" stroke-width="2" opacity=".7"/>
+  <ellipse cx="949" cy="295" rx="194" ry="77" transform="rotate(54 949 295)" fill="none" stroke="#e9b588" stroke-width="2" opacity=".7"/>
+  <circle cx="949" cy="295" r="103" fill="url(#orb)"/>
+</svg>
